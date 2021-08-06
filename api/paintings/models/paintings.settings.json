@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "paintings",
+  "info": {
+    "name": "paintings"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "dimension": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "date"
+    },
+    "available": {
+      "type": "boolean"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "category": {
+      "via": "paintings",
+      "model": "category"
+    }
+  }
+}
