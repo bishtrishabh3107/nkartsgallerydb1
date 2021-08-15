@@ -30,9 +30,10 @@
     "price": {
       "type": "integer"
     },
-    "category": {
+    "categories": {
+      "collection": "category",
       "via": "paintings",
-      "model": "category"
+      "dominant": true
     },
     "uid": {
       "type": "uid",
@@ -49,6 +50,33 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "image2": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "image3": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "paintingID": {
+      "type": "integer"
     }
   }
 }
