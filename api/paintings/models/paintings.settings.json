@@ -77,6 +77,12 @@
     },
     "paintingID": {
       "type": "integer"
+    },
+    "link": {
+      "type": "string"
+    },
+    "keywords": {
+      "type": "string"
     }
   }
 }
