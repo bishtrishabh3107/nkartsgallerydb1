@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/coin-global",
+      "handler": "coin-global.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/coin-global",
+      "handler": "coin-global.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/coin-global",
+      "handler": "coin-global.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

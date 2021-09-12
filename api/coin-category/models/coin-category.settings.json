@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coin_categories",
+  "info": {
+    "name": "coinCategory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "uid": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "about_coins": {
+      "via": "coin_categories",
+      "collection": "about-coin"
+    }
+  }
+}

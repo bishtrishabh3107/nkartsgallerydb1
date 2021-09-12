@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_coins",
+  "info": {
+    "name": "aboutCoin",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "coinName": {
+      "type": "string"
+    },
+    "uid": {
+      "type": "uid",
+      "targetField": "coinName"
+    },
+    "coinID": {
+      "type": "integer"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "coinSummary": {
+      "type": "richtext"
+    },
+    "coinMarket": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.coin-market"
+    },
+    "coin_categories": {
+      "collection": "coin-category",
+      "via": "about_coins",
+      "dominant": true
+    },
+    "coinUpdates": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.coin-updates"
+    }
+  }
+}

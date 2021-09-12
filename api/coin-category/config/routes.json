@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/coin-categories",
+      "handler": "coin-category.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/coin-categories/count",
+      "handler": "coin-category.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/coin-categories/:id",
+      "handler": "coin-category.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/coin-categories",
+      "handler": "coin-category.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/coin-categories/:id",
+      "handler": "coin-category.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/coin-categories/:id",
+      "handler": "coin-category.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
