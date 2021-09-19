@@ -96,6 +96,19 @@
     },
     "step5": {
       "type": "richtext"
+    },
+    "learnOrEarn": {
+      "type": "enumeration",
+      "enum": [
+        "Learn",
+        "Earn"
+      ]
+    },
+    "spotlight": {
+      "type": "boolean"
+    },
+    "keywords": {
+      "type": "text"
     }
   }
 }
