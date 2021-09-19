@@ -27,9 +27,6 @@
       "required": false,
       "pluginOptions": {}
     },
-    "step1": {
-      "type": "string"
-    },
     "image2": {
       "model": "file",
       "via": "related",
@@ -41,9 +38,6 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
-    },
-    "step2": {
-      "type": "string"
     },
     "image3": {
       "collection": "file",
@@ -57,9 +51,6 @@
       "required": false,
       "pluginOptions": {}
     },
-    "step3": {
-      "type": "string"
-    },
     "image4": {
       "model": "file",
       "via": "related",
@@ -71,9 +62,6 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
-    },
-    "step4": {
-      "type": "string"
     },
     "image5": {
       "model": "file",
@@ -87,14 +75,27 @@
       "required": false,
       "pluginOptions": {}
     },
-    "step5": {
-      "type": "string"
-    },
     "link1": {
       "type": "string"
     },
-    "link2": {
-      "type": "string"
+    "uid": {
+      "type": "uid",
+      "targetField": "headline"
+    },
+    "step1": {
+      "type": "richtext"
+    },
+    "step2": {
+      "type": "richtext"
+    },
+    "step3": {
+      "type": "richtext"
+    },
+    "step4": {
+      "type": "richtext"
+    },
+    "step5": {
+      "type": "richtext"
     }
   }
 }
