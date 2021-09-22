@@ -39,18 +39,6 @@
       "required": false,
       "pluginOptions": {}
     },
-    "image3": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
     "image4": {
       "model": "file",
       "via": "related",
@@ -109,6 +97,18 @@
     },
     "keywords": {
       "type": "text"
+    },
+    "image31": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
