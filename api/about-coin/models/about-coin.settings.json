@@ -42,17 +42,12 @@
       "via": "about_coins",
       "dominant": true
     },
-    "coinUpdates": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.coin-updates"
-    },
     "keywords": {
       "type": "text"
     },
-    "coin_update": {
+    "coin_updates": {
       "via": "about_coin",
-      "model": "coin-update"
+      "collection": "coin-update"
     }
   }
 }

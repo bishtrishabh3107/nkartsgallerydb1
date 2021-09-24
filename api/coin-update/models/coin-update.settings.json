@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "coin_updates",
   "info": {
-    "name": "coinUpdate"
+    "name": "coinUpdate",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -30,8 +31,11 @@
       "pluginOptions": {}
     },
     "about_coin": {
-      "model": "about-coin",
-      "via": "coin_update"
+      "via": "coin_updates",
+      "model": "about-coin"
+    },
+    "keywords": {
+      "type": "text"
     }
   }
 }
