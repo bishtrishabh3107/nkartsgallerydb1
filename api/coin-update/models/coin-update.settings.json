@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coin_updates",
+  "info": {
+    "name": "coinUpdate"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "date"
+    },
+    "update": {
+      "type": "richtext"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "about_coin": {
+      "model": "about-coin",
+      "via": "coin_update"
+    }
+  }
+}

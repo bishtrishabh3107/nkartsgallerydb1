@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/coin-updates",
+      "handler": "coin-update.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/coin-updates/count",
+      "handler": "coin-update.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/coin-updates/:id",
+      "handler": "coin-update.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/coin-updates",
+      "handler": "coin-update.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/coin-updates/:id",
+      "handler": "coin-update.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/coin-updates/:id",
+      "handler": "coin-update.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

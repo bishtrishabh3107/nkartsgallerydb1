@@ -37,11 +37,6 @@
     "coinSummary": {
       "type": "richtext"
     },
-    "coinMarket": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.coin-market"
-    },
     "coin_categories": {
       "collection": "coin-category",
       "via": "about_coins",
@@ -54,6 +49,10 @@
     },
     "keywords": {
       "type": "text"
+    },
+    "coin_update": {
+      "via": "about_coin",
+      "model": "coin-update"
     }
   }
 }
